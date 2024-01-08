@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Movie Club Page</title>
+        <link href="../styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <h1 id="specialsH1">Specials</h2>
+      <div id="movieSpecials">
+
+        <img src="" alt="">
+
+        <h2 id="communityH2" class="specialH2">Community Movies</h2>
+        <h2 id="halloweenH2" class="specialH2">Halloween Movies</h2>
+        <h2 id="christmasH2" class="specialH2">Christmas Movies</h2>
+
+      </div>
+
+
+      <div id="orderedSpecials">
+
+        <ol id="communitySection"></ol>
+        <ol id="spookySection"></ol>
+        <ol id="christmasSection"></ol>
+
+      </div>
+
+      <h1 id="requestH1">Requested for Movie Night</h1>
+      <section id="requestedContainer"></section>
+
+      <div id="randomBtns">
+
+        <img class="randomCoins" id ="randomMovieBtn" src="../MediaContent/RandomMovieCoin.jpg" alt="Generate Random Movie">
+        <img class="randomCoins" id ="randomRequestedBtn" src="../MediaContent/RandomRequestedCoin.png" alt="Generate Random Requested Movie">
+      </div>
+
+
+      <video id="deleteAnimation" width="690" height="360" controls style="display: none;">
+        <source src="../MediaContent/TrashMan.mp4" type="video/mp4">
+      </video>
+
+      <div id="videoOverlay" style="display: none;"></div>
+
+      <h1 id="sortingMachineH1">Sorting Machine</h1>
+
+      <div id="sortingMachine">
+
+        <button id="markAsUnseenBtn">I <b>haven't</b> seen this
+        </button>
+
+        <section id="sortingContainer"></section>
+
+        <button id="markAsSeenBtn">I <b>have</b> seen this!
+        </button>
+
+
+      </div>
+
+      <h1 id="addToMasterH1">Add A Movie To The List</h1>
+
+      <div>
+
+        <form id="addMasterForm">
+
+          <input type="text" id="titleGen" name="MovieTitleInput"
+          placeholder="Enter Movie Title"/>
+
+          <input type="text" id="genreGen" name="MovieGenreInput"
+          placeholder="Enter Movie Genre"/>
+
+          <input type="text" id="coverGen"  name="MovieCoverInput"
+          placeholder="Paste Cover Image URL"/>
+
+          <button name="addTMBtn" type="submit">ADD MOVIE!</button>
+
+        </form>
+
+
+
+        <section id="movieContainer"></section>
+
+      </div>
+
+      
+		
+		  <script src="../node_modules/axios/dist/axios.min.js"></script>
+		  <script src="../MovieClubPage/MovieClubMain.js"></script>
+
+    </body>
+
+</html>
